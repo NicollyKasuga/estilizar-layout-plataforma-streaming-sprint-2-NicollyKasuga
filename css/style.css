@@ -21,18 +21,103 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*BODY*/
 	body{
+		background-color: #00002e;
+		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+		color: white;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		
+	}
 
+	li{
+		list-style-type: none;
 	}
 
 /*TOPO*/
 	header.topo{
-		
-	}
 
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 80px;
+	}
+	.topo figure{
+		margin: 0;
+		padding: 0;
+		width: 300px;
+	}
+	.topo img{
+		width: 100%;
+	}
 /*RODAPÉ*/
 	
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
+	.pg-home{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: auto;
+	}
+
+	.pg-home section{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 858px;
+	}
+	figcaption{
+		display: none;
+	}
+	.pg-home figure {
+		width: 186px;
+	}
+	.pg-home img{
+		width: 100%;
+	}
+	ul{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+	ul li{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+	.pg-home h2{
+		font-size: 44px;
+		text-align: center;
+	}
+	button{
+			border-radius: 1px;
+			background: none;
+			color: white;
+			padding: 10px 30px 10px 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+	}
+	footer{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	@media only screen and (max-width: 900px){
+		ul{
+			flex-wrap: wrap;
+		}
+		.topo figure{
+			margin: auto;
+		}
+		footer{
+			margin-bottom: 20px;
+		}
+
 	}
